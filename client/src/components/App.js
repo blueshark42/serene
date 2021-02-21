@@ -1,23 +1,20 @@
 import React, { Component } from "react";
 import { Router } from "@reach/router";
+
 import NotFound from "./pages/NotFound.js";
 import Skeleton from "./pages/Skeleton.js";
 import PositiveMessage from "./pages/PositiveMessage.js";
 
 import StarrySky from "./pages/StarrySky.js";
-import Title from "./pages/Title.js";
+import Mood from "./pages/Mood.js";
+import Footer from "./pages/Footer.js";
 
 import "../utilities.css";
 
 import { socket } from "../client-socket.js";
-
 import { get, post } from "../utilities";
 
-/**
- * Define the "App" component as a class.
- */
 class App extends Component {
-  // makes props available in this component
   constructor(props) {
     super(props);
     this.state = {
@@ -50,8 +47,7 @@ class App extends Component {
 
   render() {
     return (
-      <>
-        {/* <Title>Serene</Title> */}
+      <div>
         <StarrySky />
         <Router>
           <Skeleton
@@ -60,10 +56,12 @@ class App extends Component {
             handleLogout={this.handleLogout}
             userId={this.state.userId}
           />
-          <PositiveMessage path="/positive-message" userId={this.state.userId}></PositiveMessage>
+          <PositiveMessage path="/positive-message" userId={this.state.userId} />
+          <Mood path="/mood" />
           <NotFound default />
         </Router>
-      </>
+        <Footer />
+      </div>
     );
   }
 }
