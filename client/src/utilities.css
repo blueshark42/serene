@@ -71,3 +71,10 @@ form {
 .u-link:hover {
   color: var(--primary--dim);
 }
+
+.router {
+  position: absolute;
+  right: 0px;
+  width: 150px;
+  top: 20px;
+}

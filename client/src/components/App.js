@@ -9,6 +9,7 @@ import StarrySky from "./pages/StarrySky.js";
 import Mood from "./pages/Mood.js";
 import Footer from "./pages/Footer.js";
 import RandomVid from "./pages/RandomVid";
+import Home from "./pages/Home.js";
 
 import "../utilities.css";
 
@@ -46,22 +47,24 @@ class App extends Component {
     post("/api/logout");
   };
 
+  // <PositiveMessage path="/positive-message" userId={this.state.userId} />
+  // <NotFound default />
+
   render() {
     return (
       <div>
         <StarrySky />
-        <Router>
-          <Skeleton
-            path="/"
-            handleLogin={this.handleLogin}
-            handleLogout={this.handleLogout}
-            userId={this.state.userId}
-          />
-          <PositiveMessage path="/positive-message" userId={this.state.userId} />
-          <Mood path="/mood" />
-          <NotFound default />
-        </Router>
-        <RandomVid/>
+        <div className="router">
+          <Router>
+            <Skeleton
+              path="/"
+              handleLogin={this.handleLogin}
+              handleLogout={this.handleLogout}
+              userId={this.state.userId}
+            />  
+          </Router>
+        </div>
+        <Home default />
         <Footer/>
       </div>
     );

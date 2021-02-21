@@ -80,9 +80,7 @@ export default class Mood extends Component {
                 <input type="submit" value="Submit" />
             </form>
             <div id="showMeHappy">
-                <img src="https://mail.google.com/mail/u/0?ui=2&ik=10fdc34691&attid=0.3&permmsgid=msg-f:1692319290736972217&th=177c536dbaeb11b9&view=att&disp=safe&realattid=f_klfb3fy20"
-                width="300"
-                height="400"/>
+                
             </div>
             <div id="showMeSad">
                 <img src="https://mail.google.com/mail/u/0?ui=2&ik=10fdc34691&attid=0.1&permmsgid=msg-f:1692319290736972217&th=177c536dbaeb11b9&view=att&disp=safe&realattid=f_klfb3fyq1"
