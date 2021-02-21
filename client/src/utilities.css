@@ -19,6 +19,8 @@ body {
   padding: 0;
   font-family: 'Akaya Telivigala', cursive;
   font-weight: 300;
+  min-height: 100%;
+  overflow: visible;
 }
 
 form {
@@ -70,4 +72,11 @@ form {
 
 .u-link:hover {
   color: var(--primary--dim);
+}
+
+.router {
+  position: absolute;
+  right: 0px;
+  width: 150px;
+  top: 20px;
 }
