@@ -52,6 +52,7 @@ export default class Home extends Component {
             </p>
           </div>
         </div>
+        <h1 className="space">.</h1>
       </div>
     );
   }

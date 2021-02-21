@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import "../../utilities.css";
-import "./RandomVid.css";
+import "./PicsVids.css";
 
 import msg1 from "../../assets/msg1.png";
 import msg2 from "../../assets/msg2.png";
