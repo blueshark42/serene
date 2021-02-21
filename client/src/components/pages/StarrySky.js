@@ -32,7 +32,7 @@ export default class StarrySky extends React.Component {
       targets: ["#shootingstars .wish"],
       easing: "linear",
       loop: true,
-      delay: (el, i) => 1000 * i,
+      delay: (el, i) => 500 * i,
       opacity: [
         {
           duration: 700,

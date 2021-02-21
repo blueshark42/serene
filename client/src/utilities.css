@@ -34,9 +34,12 @@
 
 body {
   margin: 0;
+<<<<<<< HEAD
   padding: 0;
   font-family: "Istok Web", sans-serif;;
   font-weight: 400;
+=======
+>>>>>>> 67c4778823de40ee6796479443b1730e2d31320a
   font-family: 'Akaya Telivigala', cursive;
   font-weight: 300;
   min-height: 100%;
@@ -99,4 +102,8 @@ form {
   right: 0px;
   width: 150px;
   top: 20px;
+}
+
+.space {
+  font-size: 60px;
 }

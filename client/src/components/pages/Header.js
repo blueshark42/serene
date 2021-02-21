@@ -2,18 +2,13 @@ import React from "react";
 
 import "./Header.css";
 
+import icon from "../../assets/sitting.png";
 export default class Header extends React.Component {
-
   render() {
     return (
       <div className="header">
-        <h1>
-          Serene 
-        </h1>
-        <img src="https://mail.google.com/mail/u/0?ui=2&ik=10fdc34691&attid=0.2&permmsgid=msg-f:1692319290736972217&th=177c536dbaeb11b9&view=att&disp=safe&realattid=f_klfb3fyz2"
-             width="180"
-             height="140"
-        />
+        <h1>Serene</h1>
+        <img src={icon} width="60px" height="80px" />
       </div>
     );
   }
