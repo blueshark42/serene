@@ -1,0 +1,28 @@
+body, p {
+  background-color: #ffffff;
+  color: rgb(247, 58, 58);
+  font-family: "Istok Web", sans-serif;
+  padding: 20px;
+}
+
+h2 {
+    background-color: #ffffff;
+    color: rgb(5, 131, 131);
+    font-family: "Istok Web", sans-serif;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+.header {
+  background-color: white;
+  color: rgb(5, 131, 131);
+  font-family: "Istok Web", sans-serif;padding: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.card {
+  background-color: rgb(214, 247, 255);
+  padding: 20px;
+  margin-top: 20px;
+}
