@@ -11,6 +11,7 @@ export default class PositiveMessage extends React.Component {
         <h1 className="title">Leave a positive message! :)</h1>
         <textarea className="PositiveMessage-input" placeholder="Your message"></textarea>
         <button className="PositiveMessage-button">Submit</button>
+        <h1 className="space">.</h1>
       </div>
     );
   }
