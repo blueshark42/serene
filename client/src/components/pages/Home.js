@@ -15,11 +15,7 @@ export default class Home extends Component {
       <div className="column">
         <div className="row">
           <div className="button1">
-            <p>
-              <a href="https://www.w3schools.com">
-                <img border="0" alt="random songs" src={icon1} width="300" height="380" />
-              </a>
-            </p>
+            <img border="0" alt="random vids" src={icon1} width="300" height="380" />
           </div>
 
           <div className="button4">

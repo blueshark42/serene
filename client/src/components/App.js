@@ -9,6 +9,7 @@ import Mood from "./pages/Mood.js";
 import Footer from "./pages/Footer.js";
 import Home from "./pages/Home.js";
 import Header from "./pages/Header.js";
+import RandomVid from "./pages/RandomVid.js";
 
 import "../utilities.css";
 
@@ -61,11 +62,19 @@ class App extends Component {
               handleLogout={this.handleLogout}
               userId={this.state.userId}
             />  
+            <RandomVid
+              path="/"
+            />
+            <Mood
+              path="mood"
+            />
+            <PositiveMessage
+              path="/positivemessage"
+              userId={this.state.userId}
+            />
           </Router>
         </div>
         <Home />
-        <Mood />
-        <PositiveMessage userId={this.state.userId} />
         <Footer/>
       </div>
     );
