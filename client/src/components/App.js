@@ -3,6 +3,9 @@ import { Router } from "@reach/router";
 
 import NotFound from "./pages/NotFound.js";
 import Skeleton from "./pages/Skeleton.js";
+import PositiveMessage from "./pages/PositiveMessage.js";
+
+import StarrySky from "./pages/StarrySky.js";
 import Mood from "./pages/Mood.js";
 import Footer from "./pages/Footer.js";
 import RandomVid from "./pages/RandomVid";
@@ -46,7 +49,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Mood />
+        <StarrySky />
         <Router>
           <Skeleton
             path="/"
@@ -54,6 +57,8 @@ class App extends Component {
             handleLogout={this.handleLogout}
             userId={this.state.userId}
           />
+          <PositiveMessage path="/positive-message" userId={this.state.userId} />
+          <Mood path="/mood" />
           <NotFound default />
         </Router>
         <RandomVid/>

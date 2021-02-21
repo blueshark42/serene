@@ -105,6 +105,6 @@ export default class Mood extends Component {
                 height="400"/>
             </div>
         </div>
-      );
-    }
+    );
+  }
 }
