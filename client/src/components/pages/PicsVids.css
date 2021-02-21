@@ -1,8 +1,9 @@
 .random-pic {
-    display: block;
+    float: left;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     margin-top: 30px;
-    margin-bottom: 500px;
+    margin-bottom: 100px;
+    margin-left: 100px;
 }

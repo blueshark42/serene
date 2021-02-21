@@ -3,6 +3,10 @@ import React, { Component } from "react";
 import "../../utilities.css";
 import "./Mood.css";
 
+import sitting from "../../assets/sitting.png";
+import sleeping from "../../assets/sleeping.png";
+import happy from "../../assets/happy.png";
+
 export default class Mood extends Component {
   constructor(props) {
     super(props);
@@ -60,7 +64,7 @@ export default class Mood extends Component {
 
   render() {
     return (
-      <div className="dropdown">
+      <div className="dropdown1">
         <form onSubmit={this.handleSubmit}>
           <label>How are you feeling today?</label>
           <br />
@@ -78,6 +82,7 @@ export default class Mood extends Component {
         </form>
 
         <div id="showMeHappy">
+          <img border="0" src={happy} width="220" height="330" />
           <p>
             {" "}
             Glad to know you are doing great! If you feel like it, feel free to leave a positive
@@ -86,12 +91,8 @@ export default class Mood extends Component {
         </div>
 
         <div id="showMeSad">
-          <img
-            src="https://mail.google.com/mail/u/0?ui=2&ik=10fdc34691&attid=0.1&permmsgid=msg-f:1692319290736972217&th=177c536dbaeb11b9&view=att&disp=safe&realattid=f_klfb3fyq1"
-            width="300"
-            height="400"
-          />
-          <p>
+          <img border="0" src={sitting} width="270" height="330" />
+          <p className="paragraphs">
             {" "}
             I am really sorry about the fact that your day did not go as well as planned. Do not
             worry, not every day will be this bad and in order to stay positive, we need to keep
@@ -100,11 +101,7 @@ export default class Mood extends Component {
         </div>
 
         <div id="showMeTired">
-          <img
-            src="https://mail.google.com/mail/u/0?ui=2&ik=10fdc34691&attid=0.2&permmsgid=msg-f:1692319290736972217&th=177c536dbaeb11b9&view=att&disp=safe&realattid=f_klfb3fyz2"
-            width="450"
-            height="400"
-          />
+          <img border="0" src={sleeping} width="300" height="220" />
           <p>
             {" "}
             Some days are extremely busy and tiresome, and today seems to have been that kind of a
@@ -114,12 +111,7 @@ export default class Mood extends Component {
         </div>
 
         <div id="showMeExcited">
-          <img
-            src="https://mail.google.com/mail/u/0?ui=2&ik=10fdc34691&attid=0.3&permmsgid=msg-f:1692319290736972217&th=177c536dbaeb11b9&view=att&disp=safe&realattid=f_klfb3fy20"
-            width="300"
-            height="400"
-          />
-
+          <img border="0" src={happy} width="220" height="330" />
           <p>
             {" "}
             We are pleased to know that you are excited! Share your excitement and happiness with
@@ -128,14 +120,9 @@ export default class Mood extends Component {
         </div>
 
         <div id="showMeAnnoyed">
-          <img
-            src="https://mail.google.com/mail/u/0?ui=2&ik=10fdc34691&attid=0.1&permmsgid=msg-f:1692319290736972217&th=177c536dbaeb11b9&view=att&disp=safe&realattid=f_klfb3fyq1"
-            width="300"
-            height="400"
-          />
-
+          <img border="0" src={sitting} width="270" height="330" />
+          {" "}
           <p>
-            {" "}
             If someone/something has bothered you today, try your best to calm yourself down.
             Remember that you can not control your surroundings, but you can control yourself by
             staying positive!{" "}

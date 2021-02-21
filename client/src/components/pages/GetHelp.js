@@ -9,7 +9,7 @@ class GetHelp extends Component {
   render() {
     return (
       <div>
-        <div class="header">
+        <div class="header2">
           <h1>Getting the Help You Need</h1>
         </div>
     
@@ -37,6 +37,10 @@ class GetHelp extends Component {
             <a href="https://twloha.com/donate/" target="_blank">To Write Love on Her Arms</a>
           </div>
         </div>
+
+        <br/>
+        <br/>
+        <br/>
       </div>
     );
   }

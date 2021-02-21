@@ -25,8 +25,6 @@ export default class RandomVid extends Component {
         return (
             <div class="random-pic">
                 <img border="0" alt="random pic" src={msg1} width="400px" height="400px"/>
-                <br/>
-                <img border="0" alt="random pic" src={msg2} width="400px" height="400px"/>
             </div>
         );
     }

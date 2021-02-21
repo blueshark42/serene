@@ -41,6 +41,7 @@ export default class PositiveMessage extends React.Component {
         <button className="PositiveMessage-button" onClick={this.submitMessage}>
           Submit
         </button>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
       </div>
     );
   }

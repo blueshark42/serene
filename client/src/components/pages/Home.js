@@ -15,13 +15,18 @@ export default class Home extends Component {
       <div className="column">
         <div className="row">
           <div className="button1">
-            <img border="0" alt="random vids" src={icon1} width="300" height="380" />
+            <p>
+              <a href="https://www.w3schools.com">
+                <img border="0" alt="random vids" src={icon1} width="300" height="380" />
+              </a>
+            </p>
+            
           </div>
 
           <div className="button4">
             <p>
               <a href="https://www.w3schools.com">
-                <img border="0" alt="random songs" src={icon2} width="250" height="240" />
+                <img border="0" alt="positive msg" src={icon2} width="250" height="240" />
               </a>
             </p>
           </div>
@@ -52,7 +57,7 @@ export default class Home extends Component {
             </p>
           </div>
         </div>
-        <h1 className="space">.</h1>
+        
       </div>
     );
   }

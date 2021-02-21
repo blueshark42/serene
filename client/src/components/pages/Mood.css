@@ -1,16 +1,28 @@
 #showMeHappy {
     display: none;
+    justify-content: center;
 };
 #showMeSad {
     display:none;
+    justify-content: center;
 };
 #showMeTired {
     display:none;
+    justify-content: center;
 };
 #showMeExcited {
     display:none;
+    justify-content: center;
 };
 #showMeAnnoyed {
     display:none;
+    justify-content: center;
 };
 
+.dropdown1 {
+    justify-content: center;
+}
+
+.paragraphs {
+    text-align: center;
+}
