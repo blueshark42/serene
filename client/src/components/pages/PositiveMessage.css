@@ -29,7 +29,7 @@
   position: absolute;
   justify-content: center;
   left: 45%;
-  
+
   background: -webkit-gradient(
     linear,
     left top,
@@ -92,4 +92,8 @@
   font-size: 45px;
   width: 100vw;
   margin-top: 10px;
+}
+
+.space {
+  font-size: 120px;
 }
