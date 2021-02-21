@@ -1,4 +1,8 @@
 .PosMsgDisplay {
+  text-align: center;
+  user-select: none;
+  justify-content: center;
+  width: 100vw;
 }
 
 h1 {

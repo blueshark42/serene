@@ -30,7 +30,6 @@ export default class PositiveMessage extends React.Component {
   render() {
     return (
       <>
-        <Skeleton />
         <div className="PositiveMessage">
           <h1>Leave a positive message! :)</h1>
           <textarea

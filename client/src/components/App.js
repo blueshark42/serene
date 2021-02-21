@@ -2,12 +2,14 @@ import React, { Component } from "react";
 import { Router } from "@reach/router";
 
 import NotFound from "./pages/NotFound.js";
+import Skeleton from "./pages/Skeleton.js";
 import PositiveMessage from "./pages/PositiveMessage.js";
 import StarrySky from "./pages/StarrySky.js";
 import Mood from "./pages/Mood.js";
 import Footer from "./pages/Footer.js";
 import Home from "./pages/Home.js";
 import Header from "./pages/Header.js";
+import RandomVid from "./pages/RandomVid.js";
 
 import "../utilities.css";
 
@@ -51,15 +53,20 @@ export default class App extends Component {
     return (
       <div>
         <StarrySky />
+        <Header />
         <div className="router">
           <Router>
-            <Home path="/" />
-            <Mood path="mood" />
+            <Skeleton
+              path="/"
+              handleLogin={this.handleLogin}
+              handleLogout={this.handleLogout}
+              userId={this.state.userId}
+            />
+            <Mood path="/mood" />
             <PositiveMessage path="/positivemessage" userId={this.state.userId} />
             <NotFound default />
           </Router>
         </div>
-
         <Footer />
       </div>
     );

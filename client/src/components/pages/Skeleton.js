@@ -1,12 +1,13 @@
 import React, { Component } from "react";
+import PosMsgDisplay from "../modules/PosMsgDisplay.js";
 import GoogleLogin, { GoogleLogout } from "react-google-login";
-import anime from "animejs/lib/anime.es.js";
 
 import "../../utilities.css";
 import "./Skeleton.css";
 
-//TODO: REPLACE WITH YOUR OWN CLIENT_ID
 const GOOGLE_CLIENT_ID = "242644174680-siihmdrs3v53qkjpekb0b5j6sbsk0be7.apps.googleusercontent.com";
+
+import Home from "./Home.js";
 
 export default class Skeleton extends Component {
   constructor(props) {
@@ -39,6 +40,9 @@ export default class Skeleton extends Component {
             />
           )}
         </div>
+
+        <PosMsgDisplay />
+        <Home/>
       </>
     );
   }
