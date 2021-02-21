@@ -21,7 +21,6 @@ export default class Home extends Component {
                 <img border="0" alt="random vids" src={icon1} width="300" height="380" />
               </a>
             </p>
-            
           </div>
 
           <div className="button4">
@@ -33,17 +32,17 @@ export default class Home extends Component {
           </div>
 
             <div className="button2">
-              <img border="0" alt="random songs" src={icon3} width="300" height="380" />
+              <img border="0" alt="random songs" src={icon3} width="230" height="280" />
             </div>
           </div>
 
           <div className="row">
             <div className="button3">
-              <img border="0" alt="random songs" src={icon4} width="300" height="380" />
+              <img border="0" alt="random songs" src={icon4} width="300" height="200" />
             </div>
 
             <div className="button5">
-              <img border="0" alt="random songs" src={icon5} width="300" height="380" />
+              <img border="0" alt="random songs" src={icon5} width="250" height="250" />
             </div>
           </div>
         </div>

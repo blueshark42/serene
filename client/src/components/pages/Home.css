@@ -6,17 +6,6 @@
     display: flex;
     -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
-
-.column img {
-    -ms-flex: 50%;
-    flex: 50%;
-    padding: 0 4px;
-    vertical-align: middle;
-}
-
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  }

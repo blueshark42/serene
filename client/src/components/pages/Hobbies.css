@@ -1,0 +1,23 @@
+
+  iframe {
+    background-color: rgb(156, 221, 238);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .header2 {
+    background-color: white;
+    color: rgb(5, 131, 131);
+    font-family: "Istok Web", sans-serif;padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+  .card {
+    background-color: rgb(214, 247, 255);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  

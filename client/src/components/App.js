@@ -11,6 +11,7 @@ import Home from "./pages/Home.js";
 import Header from "./pages/Header.js";
 import PicsVids from "./pages/PicsVids.js";
 import GetHelp from "./pages/GetHelp.js";
+import Hobbies from "./pages/Hobbies.js";
 
 import "../utilities.css";
 
@@ -72,6 +73,7 @@ export default class App extends Component {
         <Home />
 
         <Mood />
+        <Hobbies />
         <GetHelp />
         <PicsVids />
         <PositiveMessage userId={this.state.userId}/>
