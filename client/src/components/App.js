@@ -45,7 +45,6 @@ class App extends Component {
     return (
       <div>
         <Mood />
-        <p>Hello</p>
         <Router>
           <Skeleton
             path="/"
