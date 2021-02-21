@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Router } from "@reach/router";
 
 import NotFound from "./pages/NotFound.js";
-import Skeleton from "./pages/Skeleton.js";
 import PositiveMessage from "./pages/PositiveMessage.js";
 import StarrySky from "./pages/StarrySky.js";
 import Mood from "./pages/Mood.js";
@@ -15,7 +14,7 @@ import "../utilities.css";
 import { socket } from "../client-socket.js";
 import { get, post } from "../utilities";
 
-class App extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -52,24 +51,17 @@ class App extends Component {
     return (
       <div>
         <StarrySky />
-        <Header />
         <div className="router">
           <Router>
-            <Skeleton
-              path="/"
-              handleLogin={this.handleLogin}
-              handleLogout={this.handleLogout}
-              userId={this.state.userId}
-            />  
+            <Home path="/" />
+            <Mood path="mood" />
+            <PositiveMessage path="/positivemessage" userId={this.state.userId} />
+            <NotFound default />
           </Router>
         </div>
-        <Home />
-        <Mood />
-        <PositiveMessage userId={this.state.userId} />
-        <Footer/>
+
+        <Footer />
       </div>
     );
   }
 }
-
-export default App;

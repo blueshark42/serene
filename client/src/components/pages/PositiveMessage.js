@@ -5,6 +5,7 @@ import "../../utilities.css";
 
 import { socket } from "../../client-socket.js";
 import { get, post } from "../../utilities.js";
+import Skeleton from "./Skeleton";
 
 export default class PositiveMessage extends React.Component {
   constructor(props) {
@@ -28,20 +29,23 @@ export default class PositiveMessage extends React.Component {
 
   render() {
     return (
-      <div className="PositiveMessage">
-        <h1>Leave a positive message! :)</h1>
-        <textarea
-          className="PositiveMessage-input"
-          placeholder="Your message"
-          value={this.state.message}
-          onChange={(event) => {
-            this.setState({ message: event.target.value });
-          }}
-        />
-        <button className="PositiveMessage-button" onClick={this.submitMessage}>
-          Submit
-        </button>
-      </div>
+      <>
+        <Skeleton />
+        <div className="PositiveMessage">
+          <h1>Leave a positive message! :)</h1>
+          <textarea
+            className="PositiveMessage-input"
+            placeholder="Your message"
+            value={this.state.message}
+            onChange={(event) => {
+              this.setState({ message: event.target.value });
+            }}
+          />
+          <button className="PositiveMessage-button" onClick={this.submitMessage}>
+            Submit
+          </button>
+        </div>
+      </>
     );
   }
 }
