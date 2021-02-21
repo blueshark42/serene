@@ -4,7 +4,8 @@ import { Router } from "@reach/router";
 import NotFound from "./pages/NotFound.js";
 import Skeleton from "./pages/Skeleton.js";
 import Mood from "./pages/Mood.js";
-import Footer from "./pages/Footer.js"
+import Footer from "./pages/Footer.js";
+import RandomVid from "./pages/RandomVid";
 
 import "../utilities.css";
 
@@ -55,6 +56,7 @@ class App extends Component {
           />
           <NotFound default />
         </Router>
+        <RandomVid/>
         <Footer/>
       </div>
     );
