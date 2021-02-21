@@ -1,0 +1,6 @@
+footer {
+    background: -webkit-linear-gradient(to right, #B589D6, #804FB3);
+    background: linear-gradient(to right, #B589D6, #804FB3);
+    min-height: 30px;
+    padding: 20px;
+}
