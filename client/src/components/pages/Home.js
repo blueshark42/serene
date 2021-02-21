@@ -32,7 +32,7 @@ export default class Home extends Component {
           </div>
 
             <div className="button2">
-              <img border="0" alt="random songs" src={icon3} width="230" height="280" />
+              <img border="0" alt="random songs" src={icon3} width="240" height="250" />
             </div>
           </div>
 
