@@ -42,4 +42,8 @@ class GetHelp extends Component {
   }
 }
 
+<<<<<<< HEAD
 export default GetHelp;
+=======
+export default GetHelp;
+>>>>>>> 67c4778823de40ee6796479443b1730e2d31320a
