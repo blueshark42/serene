@@ -1,11 +1,9 @@
 import React from "react";
-import Title from "./Header";
 
 import "./PositiveMessage.css";
 import "../../utilities.css";
 
 import { socket } from "../../client-socket.js";
-
 import { get, post } from "../../utilities.js";
 
 export default class PositiveMessage extends React.Component {
@@ -31,7 +29,7 @@ export default class PositiveMessage extends React.Component {
   render() {
     return (
       <div className="PositiveMessage">
-        <Title>Leave a positive message! :)</Title>
+        <h1>Leave a positive message! :)</h1>
         <textarea
           className="PositiveMessage-input"
           placeholder="Your message"
