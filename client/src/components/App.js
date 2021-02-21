@@ -9,7 +9,7 @@ import Mood from "./pages/Mood.js";
 import Footer from "./pages/Footer.js";
 import Home from "./pages/Home.js";
 import Header from "./pages/Header.js";
-import RandomVid from "./pages/RandomVid.js";
+import PicsVids from "./pages/PicsVids.js";
 
 import "../utilities.css";
 
