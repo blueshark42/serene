@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import { Router } from "@reach/router";
 import NotFound from "./pages/NotFound.js";
 import Skeleton from "./pages/Skeleton.js";
+import PositiveMessage from "./pages/PositiveMessage.js";
+
+import StarrySky from "./pages/StarrySky.js";
+import Title from "./pages/Title.js";
 
 import "../utilities.css";
 
@@ -47,6 +51,8 @@ class App extends Component {
   render() {
     return (
       <>
+        {/* <Title>Serene</Title> */}
+        <StarrySky />
         <Router>
           <Skeleton
             path="/"
@@ -54,6 +60,7 @@ class App extends Component {
             handleLogout={this.handleLogout}
             userId={this.state.userId}
           />
+          <PositiveMessage path="/positive-message" userId={this.state.userId}></PositiveMessage>
           <NotFound default />
         </Router>
       </>
