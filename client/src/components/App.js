@@ -1,19 +1,22 @@
 import React, { Component } from "react";
 import { Router } from "@reach/router";
+
 import NotFound from "./pages/NotFound.js";
 import Skeleton from "./pages/Skeleton.js";
+import PositiveMessage from "./pages/PositiveMessage.js";
+import StarrySky from "./pages/StarrySky.js";
+import Mood from "./pages/Mood.js";
+import Footer from "./pages/Footer.js";
+import RandomVid from "./pages/RandomVid";
+import Home from "./pages/Home.js";
+import Header from "./pages/Header.js";
 
 import "../utilities.css";
 
 import { socket } from "../client-socket.js";
-
 import { get, post } from "../utilities";
 
-/**
- * Define the "App" component as a class.
- */
 class App extends Component {
-  // makes props available in this component
   constructor(props) {
     super(props);
     this.state = {
@@ -44,19 +47,27 @@ class App extends Component {
     post("/api/logout");
   };
 
+  // <PositiveMessage path="/positive-message" userId={this.state.userId} />
+  // <NotFound default />
+
   render() {
     return (
-      <>
-        <Router>
-          <Skeleton
-            path="/"
-            handleLogin={this.handleLogin}
-            handleLogout={this.handleLogout}
-            userId={this.state.userId}
-          />
-          <NotFound default />
-        </Router>
-      </>
+      <div>
+        <StarrySky />
+        <Header />
+        <div className="router">
+          <Router>
+            <Skeleton
+              path="/"
+              handleLogin={this.handleLogin}
+              handleLogout={this.handleLogout}
+              userId={this.state.userId}
+            />  
+          </Router>
+        </div>
+        <Home default />
+        <Footer/>
+      </div>
     );
   }
 }

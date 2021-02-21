@@ -1,6 +1,10 @@
 body {
   background: linear-gradient(to right, #ff47a1 0%, #ff9f4d 100%);
-  width: 1000px;
+}
+
+#App {
+  z-index: -1;
+  position: absolute;
 }
 
 #sky {
