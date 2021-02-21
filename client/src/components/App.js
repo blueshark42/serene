@@ -17,7 +17,7 @@ import "../utilities.css";
 import { socket } from "../client-socket.js";
 import { get, post } from "../utilities";
 
-class App extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -62,19 +62,13 @@ class App extends Component {
               handleLogin={this.handleLogin}
               handleLogout={this.handleLogout}
               userId={this.state.userId}
-            />  
-            <PicsVids
-              path="/"
             />
-            <Mood
-              path="mood"
-            />
-            <PositiveMessage
-              path="/positivemessage"
-              userId={this.state.userId}
-            />
+            <Mood path="/mood" />
+            <PositiveMessage path="/positivemessage" userId={this.state.userId} />
+            <NotFound default />
           </Router>
         </div>
+
         <Home />
 
         <Mood />
@@ -87,5 +81,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
