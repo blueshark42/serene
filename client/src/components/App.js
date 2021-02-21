@@ -75,6 +75,7 @@ class App extends Component {
           </Router>
         </div>
         <Home />
+        <RandomVid/>
         <Footer/>
       </div>
     );

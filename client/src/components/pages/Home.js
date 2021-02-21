@@ -21,7 +21,7 @@ export default class Home extends Component {
           <div className="button4">
             <p>
               <a href="https://www.w3schools.com">
-                <img border="0" alt="random songs" src={icon2} width="300" height="380" />
+                <img border="0" alt="random songs" src={icon2} width="250" height="240" />
               </a>
             </p>
           </div>
@@ -29,7 +29,7 @@ export default class Home extends Component {
           <div className="button2">
             <p>
               <a href="https://www.w3schools.com">
-                <img border="0" alt="random songs" src={icon3} width="300" height="380" />
+                <img border="0" alt="random songs" src={icon3} width="290" height="290" />
               </a>
             </p>
           </div>
@@ -39,7 +39,7 @@ export default class Home extends Component {
           <div className="button3">
             <p>
               <a href="https://www.w3schools.com">
-                <img border="0" alt="random songs" src={icon4} width="300" height="380" />
+                <img border="0" alt="random songs" src={icon4} width="400" height="240" />
               </a>
             </p>
           </div>
@@ -47,7 +47,7 @@ export default class Home extends Component {
           <div className="button5">
             <p>
               <a href="https://www.w3schools.com">
-                <img border="0" alt="random songs" src={icon5} width="300" height="380" />
+                <img border="0" alt="random songs" src={icon5} width="260" height="260" />
               </a>
             </p>
           </div>
