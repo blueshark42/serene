@@ -62,7 +62,7 @@ export default class Mood extends Component {
       return (
         <div className = "dropdown">
             <form onSubmit={this.handleSubmit}>
-                <label for="mood">How are you feeling today?</label>
+                <label>How are you feeling today?</label>
                 <br />
                 <select 
                     name="mood" 
