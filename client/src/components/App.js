@@ -4,12 +4,12 @@ import { Router } from "@reach/router";
 import NotFound from "./pages/NotFound.js";
 import Skeleton from "./pages/Skeleton.js";
 import PositiveMessage from "./pages/PositiveMessage.js";
-
 import StarrySky from "./pages/StarrySky.js";
 import Mood from "./pages/Mood.js";
 import Footer from "./pages/Footer.js";
 import RandomVid from "./pages/RandomVid";
 import Home from "./pages/Home.js";
+import Header from "./pages/Header.js";
 
 import "../utilities.css";
 
@@ -54,6 +54,7 @@ class App extends Component {
     return (
       <div>
         <StarrySky />
+        <Header />
         <div className="router">
           <Router>
             <Skeleton
